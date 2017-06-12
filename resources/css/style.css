@@ -11,19 +11,29 @@ a {
   color: black;
 }
 
+h2 {
+  color: green;
+}
+
+h3 {
+  color: gray;
+}
+
 /* ------- Header ------- */
 
 header {
   display: flex;
+  align-items: center;
+  position: fixed;
   z-index: 1;
   width: 100%;
   height: 80px;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  align-items: center;
   border-bottom: 1px solid black;
   margin-bottom: 40px;
+  background-color: white:
 }
 
 nav {
@@ -52,44 +62,67 @@ nav span {
 
 main {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  border: 1px solid blue;
-}
-
-.topstory-img {
-  display: flex;
-  width: 630px;
-  height: 300px;
-  border: 1px solid blue;
-}
-
-.column {
-  border: 1px solid blue;
+  justify-content: center;
+  padding-top: 120px;
+  border: 2px solid blue;
 }
 
 .column .large {
   display: flex;
-  border: 1px solid blue;
+  flex-direction: column;
+  width: 630px;
+  border: 2px solid green;
 }
 
 .column .medium {
   display: flex;
-  border: 1px solid blue;
+  flex-direction: column;
+  width: 300px;
+  border: 2px solid aqua;
 }
 
 .column .small {
   display: flex;
+  flex-direction: column;
+  width: 240px;
+  border: 2px solid pink;
+}
+
+#topstory-img {
+  width: 630px;
+  height: 300px;
+  background-image: url(../img/img-story-main.png);
+}
+
+#topstory-txt {
+  width: 630px;
+  border: 1px solid pink;
+}
+
+
+#lvl2 {
+  width: 300px;
   border: 1px solid blue;
 }
 
-.lvl2 {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid blue;
+#lvl3-earth {
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
 }
 
-.lvl3-earth {
-  display: flex;
+#lvl3-research {
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
+}
+
+#lvl3-cats {
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
+}
+
+#bites {
   border: 1px solid blue;
 }
