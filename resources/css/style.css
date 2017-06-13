@@ -17,7 +17,16 @@ h2 {
 
 h3 {
   color: gray;
+  font-size: 16px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
 }
+
+div {
+  display: block;
+}
+
 
 /* ------- Header ------- */
 
@@ -58,71 +67,120 @@ nav span {
   color: MediumAquamarine;
 }
 
-/* ------- Main content ------- */
+/* ------- Main ------- */
 
 main {
   display: flex;
   justify-content: center;
+  width: 1232px;
+  margin: 0 auto 87px auto;
   padding-top: 120px;
-  border: 2px solid blue;
 }
 
-.column .large {
+
+/* ------- Column Large ------- */
+
+.column {
   display: flex;
   flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.large {
   width: 630px;
-  border: 2px solid green;
 }
 
-.column .medium {
+.topstory .top-image {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  border: 2px solid aqua;
-}
-
-.column .small {
-  display: flex;
-  flex-direction: column;
-  width: 240px;
-  border: 2px solid pink;
-}
-
-#topstory-img {
+  justify-content: center;
   width: 630px;
   height: 300px;
+  font-family: Georgia;
+  font-weight: Bold;
+  font-size: 40px;
+  color: white;
   background-image: url(../img/img-story-main.png);
 }
 
-#topstory-txt {
-  width: 630px;
-  border: 1px solid pink;
+.topstory .top-image span {
+  margin-left: 20px;
 }
 
 
-#lvl2 {
+.stories {
   width: 300px;
-  border: 1px solid blue;
 }
 
-#lvl3-earth {
+.test {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lvl2 {
   width: 300px;
+}
+
+.lvl3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 300px;
-  background-color: lightgray;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: Bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
-#lvl3-research {
+.research.lvl3 {
+  display: flex;
   width: 300px;
-  height: 300px;
-  background-color: lightgray;
+  background-image: url(../img/img-story-3.png);
 }
 
-#lvl3-cats {
+.earth.lvl3 {
+  display: flex;
   width: 300px;
-  height: 300px;
-  background-color: lightgray;
+  background-image: url(../img/img-story-2.png);
 }
 
-#bites {
-  border: 1px solid blue;
+.cats.lvl3 {
+  display: flex;
+  width: 300px;
+  background-image: url(../img/img-story-1.png);
+}
+
+/* ------- Column Medium ------- */
+
+.column.medium {
+  width: 300px;
+}
+
+.lvl2 {
+}
+
+/* ------- Column Small ------- */
+
+.column.small {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.bites {
+  display: flex;
+  flex-direction: column;
+}
+
+.bite {
+  font-family: verdana;
+  font-size: 12px;
+  color: dimgray;
+  padding: 20px;
+  margin: 0px;
+  border-bottom: 1px solid gray;
+  background-color: whitesmoke;
 }
